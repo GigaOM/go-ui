@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 						expand: true, // enable dynamic expansion
 						cwd: 'components/js/lib/', // src matches are relative to this path
 						src: ['**/*.js'], // pattern to match
-						dest: 'js/min/'
+						dest: 'components/js/min/'
 					}
 				]
 			}
