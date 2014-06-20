@@ -113,5 +113,13 @@ class GO_UI
 			$script_config['version'],
 			TRUE
 		);
+
+		// Font-Awesome: http://fortawesome.github.io/Font-Awesome/
+		wp_register_style(
+			'fontawesome',
+			plugins_url( 'css/font-awesome.css', __FILE__ ),
+			array(),
+			$script_config['version']
+		);
 	}// end register_resources
 }// end class
