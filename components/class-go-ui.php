@@ -20,7 +20,7 @@ class GO_UI
 		// jQuery bbq: https://github.com/cowboy/jquery-bbq
 		wp_register_script(
 			'jquery-bbq',
-			plugins_url( 'js/min/external/jquery.ba-bbq.min.js', __FILE__ ),
+			plugins_url( 'js/min/external/jquery.ba-bbq.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -29,7 +29,7 @@ class GO_UI
 		// jQuery blockUI: http://malsup.com/jquery/block/
 		wp_register_script(
 			'blockui',
-			plugins_url( 'js/min/external/jquery.blockUI.min.js', __FILE__ ),
+			plugins_url( 'js/min/external/jquery.blockUI.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -63,7 +63,7 @@ class GO_UI
 		// doTimeout: http://benalman.com/projects/jquery-dotimeout-plugin/
 		wp_register_script(
 			'jquery-dotimeout',
-			plugins_url( 'js/min/external/jquery.ba-dotimeout.min.js', __FILE__ ),
+			plugins_url( 'js/min/external/jquery.ba-dotimeout.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -72,7 +72,7 @@ class GO_UI
 		// handlebars: http://handlebarsjs.com/
 		wp_register_script(
 			'handlebars',
-			plugins_url( 'js/min/external/handlebars.min.js', __FILE__ ),
+			plugins_url( 'js/min/external/handlebars.js', __FILE__ ),
 			array(),
 			$script_config['version'],
 			TRUE
@@ -81,7 +81,7 @@ class GO_UI
 		// jQuery scrollTo: https://github.com/flesler/jquery.scrollTo
 		wp_register_script(
 			'jquery-scrollto',
-			plugins_url( 'js/min/external/jquery.scrollTo.min.js', __FILE__ ),
+			plugins_url( 'js/min/external/jquery.scrollTo.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -90,7 +90,7 @@ class GO_UI
 		// jQuery throttle: http://benalman.com/projects/jquery-throttle-debounce-plugin/
 		wp_register_script(
 			'jquery-throttle',
-			plugins_url( 'js/min/external/jquery.ba-throttle-debounce.min.js', __FILE__ ),
+			plugins_url( 'js/min/external/jquery.ba-throttle-debounce.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -99,7 +99,7 @@ class GO_UI
 		// jQuery waypoints: http://imakewebthings.com/jquery-waypoints/
 		wp_register_script(
 			'jquery-waypoints',
-			plugins_url( 'js/min/external/waypoints.min.js', __FILE__ ),
+			plugins_url( 'js/min/external/waypoints.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
