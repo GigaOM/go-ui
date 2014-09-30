@@ -46,7 +46,7 @@ class GO_UI
 
 		wp_register_style(
 			'colorbox',
-			plugins_url( 'js/min/external/colorbox/colorbox.css', __FILE__ ),
+			plugins_url( 'js/lib/external/colorbox/colorbox.css', __FILE__ ),
 			array(),
 			$script_config['version']
 		);
