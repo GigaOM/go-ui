@@ -108,7 +108,7 @@ class GO_UI
 		// Gigaom bumpdown
 		wp_register_script(
 			'jquery-inline-bumpdown',
-			plugins_url( 'js/min/external/jquery.inline-bumpdown.js', __FILE__ ),
+			plugins_url( 'js/min/jquery.inline-bumpdown.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
