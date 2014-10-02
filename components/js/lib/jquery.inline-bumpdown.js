@@ -58,7 +58,7 @@
 			source.width = $trigger_source.outerWidth();
 			source.halfway = ( source.offset.left - $parent.offset().left ) + Math.round( source.width / 2 ) - 16;
 
-			$bumpdown.prepend( '<a class="bumpdown-close"><i class="goicon icon-x"></i></a>' );
+			$bumpdown.prepend( '<a class="bumpdown-close" title="Close"><i class="goicon icon-x"></i></a>' );
 			$bumpdown.prepend( '<span class="bumpdown-arrow" style="left: ' + source.halfway + 'px;"></span>' );
 
 			$( document ).on( 'click', bumpdown_selector, function() {
