@@ -121,5 +121,14 @@ class GO_UI
 			array(),
 			$script_config['version']
 		);
+
+		// Gigaom IE fix for modernizer placeholder attributes
+		wp_register_script(
+			'modernizr-placeholder-ie-fix',
+			plugins_url( 'js/lib/modernizr.placeholder-fix.js', __FILE__ ),
+			array( 'jquery' ),
+			$script_config['version'],
+			TRUE
+		);
 	}// end register_resources
 }// end class
