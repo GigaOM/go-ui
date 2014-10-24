@@ -17,6 +17,15 @@ class GO_UI
 	{
 		$script_config = apply_filters( 'go-config', array( 'version' => 1 ), 'go-script-version' );
 
+		// Clamp.js
+		wp_register_script(
+			'clamp',
+			plugins_url( 'js/min/external/clamp.js', __FILE__ ),
+			array(),
+			$script_config['version'],
+			TRUE
+		);
+
 		// jQuery bbq: https://github.com/cowboy/jquery-bbq
 		wp_register_script(
 			'jquery-bbq',
