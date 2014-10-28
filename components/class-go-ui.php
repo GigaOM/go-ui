@@ -17,10 +17,10 @@ class GO_UI
 	{
 		$script_config = apply_filters( 'go-config', array( 'version' => 1 ), 'go-script-version' );
 
-		// Clamp.js
+		// jquery.dotdotdot.js
 		wp_register_script(
-			'clamp',
-			plugins_url( 'js/min/external/clamp.js', __FILE__ ),
+			'jquery-dotdotdot',
+			plugins_url( 'js/min/external/jquery.dotdotdot.js', __FILE__ ),
 			array(),
 			$script_config['version'],
 			TRUE
