@@ -1,6 +1,8 @@
 /*global module:false*/
 
 module.exports = function(grunt) {
+	'use strict';
+
 	var sass_files = [
 		'components/sass/**/*.scss'
 	];
@@ -33,14 +35,15 @@ module.exports = function(grunt) {
 			files: js_files.concat( sass_files ),
 			tasks: [
 				'compass:prod',
-				'uglify'
+				'newer:uglify'
 			]
 		}
 	});
 
 	// Default task.
+	grunt.loadNpmTasks( 'grunt-newer' );
 	grunt.loadNpmTasks( 'grunt-contrib-compass' );
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
-	grunt.registerTask( 'default', ['uglify', 'compass:prod'] );
+	grunt.registerTask( 'default', ['newer:uglify', 'compass:prod'] );
 };
