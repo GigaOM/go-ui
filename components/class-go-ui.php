@@ -17,10 +17,12 @@ class GO_UI
 	{
 		$script_config = apply_filters( 'go-config', array( 'version' => 1 ), 'go-script-version' );
 
+		$js_min = ( defined( 'GO_DEV' ) && GO_DEV ) ? 'lib' : 'min';
+
 		// jquery.dotdotdot.js
 		wp_register_script(
 			'jquery-dotdotdot',
-			plugins_url( 'js/min/external/jquery.dotdotdot.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/jquery.dotdotdot.js', __FILE__ ),
 			array(),
 			$script_config['version'],
 			TRUE
@@ -29,7 +31,7 @@ class GO_UI
 		// jQuery bbq: https://github.com/cowboy/jquery-bbq
 		wp_register_script(
 			'jquery-bbq',
-			plugins_url( 'js/min/external/jquery.ba-bbq.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/jquery.ba-bbq.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -38,7 +40,7 @@ class GO_UI
 		// jQuery blockUI: http://malsup.com/jquery/block/
 		wp_register_script(
 			'blockui',
-			plugins_url( 'js/min/external/jquery.blockUI.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/jquery.blockUI.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -47,7 +49,7 @@ class GO_UI
 		// jQuery colorbox: http://www.jacklmoore.com/colorbox/
 		wp_register_script(
 			'colorbox',
-			plugins_url( 'js/min/external/colorbox/jquery.colorbox-min.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/colorbox/jquery.colorbox-min.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -63,7 +65,7 @@ class GO_UI
 		// jquery Cookie: https://github.com/carhartl/jquery-cookie
 		wp_register_script(
 			'jquery-cookie',
-			plugins_url( 'js/min/external/jquery.cookie.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/jquery.cookie.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -72,7 +74,7 @@ class GO_UI
 		// doTimeout: http://benalman.com/projects/jquery-dotimeout-plugin/
 		wp_register_script(
 			'jquery-dotimeout',
-			plugins_url( 'js/min/external/jquery.ba-dotimeout.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/jquery.ba-dotimeout.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -81,7 +83,7 @@ class GO_UI
 		// handlebars: http://handlebarsjs.com/
 		wp_register_script(
 			'handlebars',
-			plugins_url( 'js/min/external/handlebars.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/handlebars.js', __FILE__ ),
 			array(),
 			$script_config['version'],
 			TRUE
@@ -90,7 +92,7 @@ class GO_UI
 		// jQuery scrollTo: https://github.com/flesler/jquery.scrollTo
 		wp_register_script(
 			'jquery-scrollto',
-			plugins_url( 'js/min/external/jquery.scrollTo.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/jquery.scrollTo.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -99,7 +101,7 @@ class GO_UI
 		// jQuery throttle: http://benalman.com/projects/jquery-throttle-debounce-plugin/
 		wp_register_script(
 			'jquery-throttle',
-			plugins_url( 'js/min/external/jquery.ba-throttle-debounce.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/jquery.ba-throttle-debounce.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -108,7 +110,7 @@ class GO_UI
 		// jQuery waypoints: http://imakewebthings.com/jquery-waypoints/
 		wp_register_script(
 			'jquery-waypoints',
-			plugins_url( 'js/min/external/waypoints.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/external/waypoints.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE
@@ -117,7 +119,7 @@ class GO_UI
 		// Gigaom bumpdown
 		wp_register_script(
 			'jquery-inline-bumpdown',
-			plugins_url( 'js/min/jquery.inline-bumpdown.js', __FILE__ ),
+			plugins_url( 'js/' . $js_min . '/jquery.inline-bumpdown.js', __FILE__ ),
 			array( 'jquery' ),
 			$script_config['version'],
 			TRUE

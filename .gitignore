@@ -1,2 +1,4 @@
 node_modules/
 .sass-cache/
+components/css
+components/js/min
